@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+/* NAVBAR */
+
+header{
+    height: 8vh;
+    background: #212529;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+}
+
+.navbar-logo{
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+    color: #fed136;
+    font-size: 1.25rem;
+    margin: 3vw;
+    z-index: 1000;
+}
+
+#toggle-menu{
+    border-style: none;
+    padding: 8px 12px;
+    color: white;
+    background: #fed136;
+    text-transform: uppercase;
+    margin: 3vw;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.main-nav{
+    position: absolute;
+    list-style: none;
+    margin: 0px;
+    background-color: #212529;
+    width: 100vw;
+    top: 8vh;
+    left: 0;
+    z-index: 0;
+}
+
+.main-nav > li{
+    padding: 8px;
+}
+
+li{
+    margin: 0 8px;
+}
+
+/* MAIN */
+
+main{
+    width: 100vw;
+    height: 50vh;
+    background-image: url('https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 8vh;
+}
+
+.darker{
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 100vw;
+    height: 42vh;
+}
+
+.main-container{
+    width: 100%;
+    padding-top: 40px;
+}
+
+.welcome{
+    text-transform: capitalize;
+    font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.greeting{
+    width: 90%;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    line-height: 1em;
+}
+
+.tell-more{
+    font-size: 14px;
+    padding: 15px 20px;
+    background-color: #fed136;
+    text-transform: uppercase;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, 0);
+}
+
+/* SERVICES */
+
+#services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+    text-align: center;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.title{
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.subtitle{
+    color: grey;
+}
+
+.offers{
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 90%;
+}
+
+.service-logo{
+    margin: 10px auto;
+    margin-bottom: 25px;
+    width: 30vw;
+    height: 30vw;
+    background-color: #fed136;
+    border-radius: 50%;
+}
+
+.e-commerce{
+    background-image: url('http://www.perfectionjewelers.com/images/Icons-cart.png');
+    background-size: 15vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.responsive{
+    background-image: url('https://www.finelinewebsites.com/images/layout/websites-responsive_sm.png');
+    background-size: 15vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.security{
+    background-image: url('http://flaticons.net/icons/Network%20and%20Security/Lock.png');
+    background-size: 15vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-text{
+    margin: 15px 0;
+    color: grey;
+    font-size: 17px;
+}
+
+/* PORTFOLIO */
+
+#portfolio{
+    background: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    /* margin-bottom: 160px; */
+}
+
+.image{
+    background-color: grey;
+    width: 92vw;
+    height: 27vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.top{
+    margin-top: 50px;
+}
+
+.threads-img{
+    background-image: url('https://images.pexels.com/photos/130855/pexels-photo-130855.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+.explore-img{
+    background-image: url('https://images.pexels.com/photos/3476/italian-italy-t-shirts.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+.finish-img{
+    background-image: url('https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+.lines-img{
+    background-image: url('https://images.pexels.com/photos/57750/pexels-photo-57750.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+.southwest-img{
+    background-image: url('https://images.pexels.com/photos/326424/pexels-photo-326424.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+.window-img{
+    background-image: url('https://images.pexels.com/photos/368893/pexels-photo-368893.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+
+.port-text{
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+.specialty{
+    font-size: 18px;
+    color: grey;
+    margin-bottom: 40px;
+}
+
+/* ABOUT */
+
+#about{
+    background: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.sub{
+    margin-bottom: 60px;
+}
+
+.section{
+    display: flex;
+}
+
+.about-info{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.about-img{
+    margin-right: 20px;
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 7px solid rgb(216, 216, 216);
+}
+
+.about-title{
+    margin: 10px 0;
+}
+
+.about-subtitle{
+    line-height: 1.4em;
+    color: grey;
+    margin-bottom: 60px;
+}
+
+.beginning-img{
+    background-image: url('https://images.pexels.com/photos/618545/pexels-photo-618545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+
+.agency-img{
+    background-image: url('https://images.pexels.com/photos/212372/pexels-photo-212372.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+
+.transition-img{
+    background-image: url('https://images.pexels.com/photos/345415/pexels-photo-345415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+
+.expansion-img{
+    background-image: url('https://images.pexels.com/photos/574345/pexels-photo-574345.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+
+/* .end-img{
+    background: #fed136;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+} */
+
+/* QUERIES */
+
+@media(min-width: 376px) {
+    main{
+        height: 60vh;
+    }
+
+    .darker{
+        height: 52vh;
+    }
+
+    .tell-more{
+        padding: 10px 15px;
+        margin-top: 10px;
+    }
+
+    .greeting{
+        font-size: 40px;
+    }
+}
+
+@media(min-width: 768px) {
+    main{
+        height: 100vh;
+    }
+
+    .main-container{
+        width: 80%;
+        margin: auto;
+        padding-top: 120px;
+    }
+
+    .darker{
+        height: 92vh;
+    }
+
+    .welcome{
+        font-size: 36px;
+    }
+
+    .greeting{
+        margin-top: 70px;
+        font-size: 55px;
+    }
+
+    .tell-more{
+        top: 70%;
+        padding: 20px 25px;
+        font-size: 18px;
+    }
+
+    .offers{
+        display: flex;
+        flex-direction: row;
+        line-height: 1.7em;
+    }
+
+    #e-commerce, #responsive, #web-security{
+        width: 30%;
+    }
+
+    .service-logo{
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .e-commerce, .responsive, .security{
+        background-size: 8vw;
+    }
+
+    .specialties{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .threads{
+        width: 30%;
+    }
+
+    .image{
+        width: 100%;
+    }
+
+    .top{
+        margin-top: 0px;
+    }
+
+    .about-img{
+        width: 12vw;
+        height: 12vw;
+    }
+}
+
+@media(min-width: 990px) {
+    .main-nav{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #toggle-menu{
+        display: none;
+    }
+
+    /* header{
+        background-color: rgba(0, 0, 0, 0);
+    } */
+
+    .darker{
+        height: 100vh;
+        position: absolute;
+        top: 0;
+    }
+
+    .greeting{
+        font-size: 70px;
+    }
+}
